@@ -2,4 +2,3 @@
 Host_Alias WEBSERVERS = {{ groups['web']|join(' ') }}
 Host_Alias DBSERVERS = {{ groups['database']|join(' ') }}
 %httpd WEBSERVERS = /bin/su - webuser
-%dba DBSERVERS = /bin/su - dbuser
